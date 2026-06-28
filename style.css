@@ -1,0 +1,174 @@
+/* Remove margens e espaçamentos padrão e facilita o controle das dimensões. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define a aparência geral da página e mantém o rodapé no final da tela. */
+body {
+    font-family: Arial, sans-serif;
+    background: #fff0f6;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Faz o conteúdo principal ocupar o espaço disponível entre cabeçalho e rodapé. */
+main {
+    flex: 1;
+}
+
+/* Estilização do cabeçalho principal. */
+header {
+    background: #d63384;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Espaçamento superior do menu. */
+nav {
+    margin-top: 15px;
+}
+
+/* Aparência dos links de navegação. */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+/* Destaca o link quando o mouse passa sobre ele ou quando representa a página atual. */
+nav a:hover,
+nav a[aria-current="page"] {
+    color: #ffd6e8;
+}
+
+/* Caixa central utilizada para organizar o conteúdo das páginas. */
+.card {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Formata a imagem de perfil em formato circular. */
+.foto-perfil {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+    border: 5px solid #d63384;
+}
+
+/* Cor e espaçamento dos títulos de segundo nível. */
+h2 {
+    color: #d63384;
+    margin-bottom: 15px;
+}
+
+/* Espaçamento dos títulos de terceiro nível. */
+h3 {
+    margin: 15px 0 10px;
+}
+
+/* Melhora a leitura dos parágrafos. */
+p {
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+/* Ajusta as listas exibidas na página de formação. */
+ul {
+    padding-left: 20px;
+    line-height: 1.7;
+}
+
+/* Blocos usados para separar os projetos do portfólio. */
+.projeto {
+    border: 1px solid #f3b6d2;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Define a aparência dos campos do formulário. */
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font: inherit;
+}
+
+/* Realça o campo selecionado pelo usuário. */
+input:focus,
+textarea:focus {
+    outline: 2px solid #f3b6d2;
+    border-color: #d63384;
+}
+
+/* Estilização do botão de envio. */
+button {
+    background: #d63384;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Alteração visual ao passar o mouse sobre o botão. */
+button:hover {
+    background: #b52b6e;
+}
+
+/* Rodapé compartilhado por todas as páginas. */
+footer {
+    text-align: center;
+    background: #d63384;
+    color: white;
+    padding: 20px;
+}
+
+/* Remove a margem inferior padrão do parágrafo dentro do rodapé. */
+footer p {
+    margin-bottom: 0;
+}
+
+/* Aparência padrão dos links presentes no conteúdo. */
+a {
+    color: #b52b6e;
+}
+
+/* Ajustes para telas menores, como celulares. */
+@media (max-width: 600px) {
+    header {
+        padding: 20px 15px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .card {
+        margin: 20px 15px;
+        padding: 20px;
+    }
+}
